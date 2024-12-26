@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Language Switching</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<button id="myButton" onclick="switchLanguage()">عربي</button>
+
+<p id="myText">This is English text.</p>
+
+<script>
+    function switchLanguage() {
+        var textElement = document.getElementById("myText");
+        var buttonElement = document.getElementById("myButton");
+        if (textElement.innerHTML === "This is English text.") {
+            textElement.innerHTML = "طعام";
+            buttonElement.innerHTML = "English";
+        } else {
+            textElement.innerHTML = "This is English text.";
+            buttonElement.innerHTML = "عربي";
+        }
+    }
+</script>
+
+</body>
+</html>
